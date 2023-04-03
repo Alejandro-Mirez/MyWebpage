@@ -1,0 +1,198 @@
+body {
+  background-color: slategrey;
+  font-family: Courier;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.title_hpg:hover {
+  color: black;
+}
+
+h4 {
+  color: #FFFFFF;
+}
+
+.opo_1 {
+  color: #FFFFFF;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: darkslategrey;
+  display: block;
+  text-align: center;
+  cursor: pointer
+}
+
+
+.opo_1:hover {
+  box-shadow: 0 0 2px 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navbar {
+  text-align: center;
+  padding: 20px;
+  margin-left: 5px;
+  float: right;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.greeting {
+  margin: 50px;
+  border-style: none;
+}
+
+.tiles {
+  width: 70%;
+  float: left;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 50%);
+  gap: 10px;
+  text-align: center;
+  padding: 50px 30px 30px 50px;
+}
+
+img {
+  max-height: 90%;
+  max-width: 90%;
+  border-style: solid;
+  border-color: #FFFFFF;
+  cursor: pointer
+}
+
+p {
+  border-style: solid;
+  padding: 20px;
+  width: 50%;
+  height: 50%;
+}
+
+.image_1, .image_2, .image_3, .image_4 {
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.Morgan, .Eliot, .PA, .Vampires {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay_1, .overlay_2, .overlay_3, .overlay_4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 95%;
+  width: 95%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: slategrey;
+  cursor: pointer;
+}
+
+.image_1:hover .overlay_1 {
+  opacity: 1;
+}
+
+.image_2:hover .overlay_2 {
+  opacity: 1;
+}
+
+.image_3:hover .overlay_3 {
+  opacity: 1;
+}
+
+.image_4:hover .overlay_4 {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  overflow: auto;
+  max-height: 90%;
+}
+
+.overlay_1 ::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay_2 ::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay_3 ::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay_4 ::-webkit-scrollbar {
+  display: none;
+}
+
+.overlay_1, .overlay_2, .overlay_3, .overlay_4 {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.heading {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 60% 40%;
+  background-color: darkslategrey;
+  border: dotted #FFFFFF;
+  border-radius: 5px;
+}
+
+.logo_space {
+  grid-row: 1 / span 2;
+  margin: 25px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.title {
+  padding-left: 1px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
