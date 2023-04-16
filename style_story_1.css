@@ -54,7 +54,7 @@ li {
 
 .heading {
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 10% 90%;
   grid-template-rows: 60% 40%;
   background-color: darkslategrey;
   border: dotted #FFFFFF;
@@ -64,8 +64,6 @@ li {
 .logo_space {
   grid-row: 1 / span 2;
   margin: 25px;
-  width: 100%;
-  height: auto;
   cursor: pointer;
 }
 
