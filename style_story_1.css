@@ -3,56 +3,7 @@ body {
   font-family: Courier;
 }
 
-h1 {
-  color: #FFFFFF;
-  font-family: "Aboreto", sans-serif;
-  font-size: 50px;
-}
-
-.title_hpg:hover {
-  color: black;
-}
-
-h4 {
-  color: #FFFFFF;
-  font-family: "Aboreto", sans-serif;
-}
-
-.opo_1 {
-  color: #FFFFFF;
-  border-style: dotted;
-  border-color: #FFFFFF;
-  border-radius: 5px;
-  margin: 20px;
-  padding: 20px;
-  background-color: darkslategrey;
-  display: block;
-  text-align: center;
-  cursor: pointer
-}
-
-
-.opo_1:hover {
-  box-shadow: 0 0 2px 1px;
-}
-
-li {
-  list-style-type: none;
-}
-
-.navbar {
-  text-align: center;
-  padding: 20px;
-  margin-left: 5px;
-  float: right;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-}
-
-.heading {
+header {
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 60% 40%;
@@ -67,11 +18,88 @@ li {
   cursor: pointer;
 }
 
-
 .title {
   width: auto;
   padding-left: 25%;
   padding-top: 30px;
+}
+
+.title_hpg:hover {
+  color: black;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-family: "Aboreto", sans-serif;
+  font-size: 50px;
+}
+
+h4 {
+  color: #FFFFFF;
+  font-family: "Aboreto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+main {
+  width: 70%;
+  float: left;
+  padding: 50px 30px 30px 50px;
+}
+
+aside {
+  text-align: center;
+  padding: 20px;
+  margin-left: 5px;
+  float: right;
+}
+
+.about {
+  color: #FFFFFF;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px 20px 50px 20px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  cursor: pointer
+}
+
+.about:hover {
+  box-shadow: 0 0 2px 1px;
+}
+
+.opo {
+  color: #FFFFFF;
+  border-style: dotted;
+  border-color: #FFFFFF;
+  border-radius: 5px;
+  margin: 20px;
+  padding: 20px;
+  background-color: darkslategrey;
+  display: block;
+  text-align: center;
+  cursor: pointer
+}
+
+.opo:hover {
+  box-shadow: 0 0 2px 1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+footer {
+  margin: 20px;
+}
+
+.back_to_homepage:hover {
+  color: black;
 }
 
 a:link {
@@ -91,38 +119,4 @@ a:hover {
 a:active {
   text-decoration: none;
   color: #ffffff;
-}
-
-img {
-  max-height: 90%;
-  max-width: 90%;
-  border-style: solid;
-  border-color: #FFFFFF;
-  cursor: pointer
-}
-
-.textspace {
-  width: 70%;
-  float: left;
-  padding: 50px 30px 30px 50px;
-}
-
-.back_to_homepage:hover {
-  color: black;
-}
-
-.about {
-  color: #FFFFFF;
-  border-style: dotted;
-  border-color: #FFFFFF;
-  border-radius: 5px;
-  margin: 20px 20px 50px 20px;
-  padding: 20px;
-  display: block;
-  text-align: center;
-  cursor: pointer
-}
-
-.about:hover {
-  box-shadow: 0 0 2px 1px;
 }

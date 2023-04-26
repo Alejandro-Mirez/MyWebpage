@@ -3,7 +3,7 @@ body {
   font-family: Courier;
 }
 
-.heading {
+header {
   display: grid;
   grid-template-columns: 10% 90%;
   grid-template-rows: 60% 40%;
@@ -44,7 +44,7 @@ h4 {
   flex-direction: row;
 }
 
-.tiles {
+main {
   width: 70%;
   float: left;
   display: grid;
@@ -63,7 +63,7 @@ img {
   cursor: pointer
 }
 
-.image {
+section {
   position: relative;
   flex-wrap: wrap;
 }
@@ -94,7 +94,7 @@ img {
   display: none;
 }
 
-.image:hover .overlay {
+section:hover .overlay {
   opacity: 1;
 }
 
@@ -110,7 +110,7 @@ img {
   max-height: 90%;
 }
 
-.navbar {
+aside {
   text-align: center;
   padding: 20px;
   margin-left: 5px;
@@ -154,7 +154,7 @@ li {
   list-style-type: none;
 }
 
-.greeting {
+footer {
   margin: 50px;
   padding: 20px;
   width: 50%;
