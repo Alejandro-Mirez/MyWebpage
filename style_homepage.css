@@ -6,22 +6,26 @@ body {
 header {
   display: grid;
   grid-template-columns: 10% 90%;
-  grid-template-rows: 60% 40%;
   background-color: darkslategrey;
   border: dotted #FFFFFF;
   border-radius: 5px;
 }
 
 .logo_space {
-  grid-row: 1 / span 2;
   margin: 25px;
   cursor: pointer;
 }
 
+#log:hover {
+  color: black;
+}
+
 .title {
   width: auto;
-  padding-left: 25%;
-  padding-top: 30px;
+  margin-left: 25%;
+  margin-top: 20px;
+  color: #FFFFFF;
+  font-family: "Aboreto", sans-serif;
 }
 
 .title_hpg:hover {
@@ -29,14 +33,11 @@ header {
 }
 
 h1 {
-  color: #FFFFFF;
-  font-family: "Aboreto", sans-serif;
   font-size: 50px;
 }
 
 h4 {
-  color: #FFFFFF;
-  font-family: "Aboreto", sans-serif;
+  margin-left: 6px;
 }
 
 .container {
@@ -52,26 +53,16 @@ main {
   grid-template-columns: repeat(2, 50%);
   gap: 10px;
   text-align: center;
-  padding: 50px 30px 30px 50px;
+  margin: 50px 30px 30px 50px;
 }
 
-img {
-  max-height: 90%;
-  max-width: 90%;
-  border-style: solid;
-  border-color: #FFFFFF;
+.cover {
   cursor: pointer
 }
 
 section {
   position: relative;
   flex-wrap: wrap;
-}
-
-.Morgan, .Eliot, .PA, .Vampires {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .overlay {
@@ -99,7 +90,7 @@ section:hover .overlay {
 }
 
 .text {
-  color: white;
+  color: #FFFFFF;
   font-size: 20px;
   position: relative;
   top: 50%;
@@ -155,10 +146,7 @@ li {
 }
 
 footer {
-  margin: 50px;
-  padding: 20px;
-  width: 50%;
-  height: 50%;
+  margin: 20px;
 }
 
 a:link {
