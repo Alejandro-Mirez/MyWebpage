@@ -1,5 +1,5 @@
 body {
-  background-color: slategrey;
+  background-color: whitesmoke;
   font-family: Courier;
 }
 
@@ -17,19 +17,19 @@ header {
 }
 
 #log:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 .title {
   width: auto;
   margin-left: 25%;
   margin-top: 20px;
-  color: #FFFFFF;
+  color: slategrey;
   font-family: "Aboreto", sans-serif;
 }
 
 .title_hpg:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 h1 {
@@ -38,6 +38,7 @@ h1 {
 
 h4 {
   margin-left: 6px;
+  color: whitesmoke;
 }
 
 .container {
@@ -59,9 +60,9 @@ aside {
 }
 
 .about {
-  color: #FFFFFF;
+  color: black;
   border-style: dotted;
-  border-color: #FFFFFF;
+  border-color: black;
   border-radius: 5px;
   margin: 20px 20px 50px 20px;
   padding: 20px;
@@ -75,13 +76,12 @@ aside {
 }
 
 .opo {
-  color: #FFFFFF;
   border-style: dotted;
-  border-color: #FFFFFF;
+  border-color: black;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
-  background-color: darkslategrey;
+  background-color: black;
   display: block;
   text-align: center;
   cursor: pointer
@@ -105,19 +105,19 @@ footer {
 
 a:link {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 a:active {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }

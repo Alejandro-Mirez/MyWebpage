@@ -1,12 +1,12 @@
 body {
-  background-color: slategrey;
+  background-color: whitesmoke;
   font-family: Courier;
 }
 
 header {
   display: grid;
   grid-template-columns: 10% 90%;
-  background-color: darkslategrey;
+  background-color: black;
   border: dotted #FFFFFF;
   border-radius: 5px;
 }
@@ -17,19 +17,19 @@ header {
 }
 
 #log:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 .title {
   width: auto;
   margin-left: 25%;
   margin-top: 20px;
-  color: #FFFFFF;
+  color: slategrey;
   font-family: "Aboreto", sans-serif;
 }
 
 .title_hpg:hover {
-  color: black;
+  color: whitesmoke;
 }
 
 h1 {
@@ -40,6 +40,11 @@ h4 {
   margin-left: 6px;
 }
 
+
+.story:hover {
+  color: whitesmoke;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -48,7 +53,30 @@ h4 {
 main {
   width: 70%;
   float: left;
-  margin: 50px 30px 30px 50px;
+  margin: 5px 30px 50px 50px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.date {
+  text-align: right;
+}
+
+.dots {
+  text-align: center;
+}
+
+.text {
+  color: black;
+  font-size: 20px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+
 }
 
 aside {
@@ -59,9 +87,9 @@ aside {
 }
 
 .about {
-  color: #FFFFFF;
+  color: black;
   border-style: dotted;
-  border-color: #FFFFFF;
+  border-color: black;
   border-radius: 5px;
   margin: 20px 20px 50px 20px;
   padding: 20px;
@@ -75,13 +103,12 @@ aside {
 }
 
 .opo {
-  color: #FFFFFF;
   border-style: dotted;
-  border-color: #FFFFFF;
+  border-color: black;
   border-radius: 5px;
   margin: 20px;
   padding: 20px;
-  background-color: darkslategrey;
+  background-color: black;
   display: block;
   text-align: center;
   cursor: pointer
@@ -95,6 +122,18 @@ li {
   list-style-type: none;
 }
 
+#topBtn {
+  position: fixed;
+  right: 110px;
+  bottom: 20px;
+  font-size: x-large;
+  border: dotted;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
 footer {
   margin: 20px;
 }
@@ -103,21 +142,42 @@ footer {
   color: black;
 }
 
+
+.pagination {
+  display: inline-block;
+  position: absolute;
+  left: 30%;
+}
+
+.pagination a {
+  color: black;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
 a:link {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 
 a:visited {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 
 a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
 a:active {
   text-decoration: none;
-  color: #ffffff;
+  color: slategrey;
 }
