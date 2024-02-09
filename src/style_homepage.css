@@ -1,70 +1,78 @@
 body {
   background-color: whitesmoke;
   font-family: Courier;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 header {
   display: grid;
-  grid-template-columns: 10% 90%;
-  background-color: black;
+  grid-template-columns: 30% 70%;
+  background-color: whitesmoke;
   border: dotted #FFFFFF;
   border-radius: 5px;
+  height: 25%;
+  min-height: 70px;
 }
 
-.logo_space {
-  margin: 25px;
+#log{
+  position: absolute;
+  top: 2.5vh;
+}
+
+
+#log:hover {
+  color: black;
   cursor: pointer;
 }
 
-#log:hover {
-  color: whitesmoke;
-}
-
 .title {
-  width: auto;
-  margin-left: 25%;
-  margin-top: 20px;
   color: slategrey;
   font-family: "Aboreto", sans-serif;
 }
 
 .title_hpg:hover {
-  color: whitesmoke;
+  color: black;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 8vh;
 }
 
 h4 {
   margin-left: 6px;
-  color: whitesmoke;
+  color: black;
+  font-size: 2vh;
 }
 
 .container {
+  height: 70%;
   display: flex;
   flex-direction: row;
+  border: dotted #FFFFFF;
 }
 
 main {
-  width: 70%;
+  width: 75%;
   float: left;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 50%);
   gap: 10px;
   text-align: center;
-  margin: 50px 30px 30px 50px;
+  padding: 50px 30px 30px 50px;
 }
 
 .cover {
-  cursor: pointer;
   font-size: x-large;
+  color: black;
 }
 
 section {
   position: relative;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .overlay {
@@ -73,12 +81,9 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 95%;
-  width: 95%;
   opacity: 0;
   transition: .5s ease;
   background-color: whitesmoke;
-  cursor: pointer;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -92,8 +97,7 @@ section:hover .overlay {
 }
 
 .text {
-  color: black;
-  font-size: 20px;
+  color: slategrey;
   position: relative;
   top: 50%;
   left: 50%;
@@ -103,17 +107,13 @@ section:hover .overlay {
   max-height: 90%;
 }
 
-.snippet {
-  border: solid;
-  padding: 5px;
-}
-
 
 aside {
-  text-align: center;
-  padding: 20px;
-  margin-left: 5px;
   float: right;
+  width: 25%;
+  padding-top: 3%;
+  border: dotted #FFFFFF;
+  overflow: scroll;
 }
 
 .about {
@@ -121,27 +121,34 @@ aside {
   border-style: dotted;
   border-color: black;
   border-radius: 5px;
-  margin: 20px 20px 50px 90px;
-  padding: 20px;
+  padding: 1vw;
   display: block;
   text-align: center;
   cursor: pointer;
+  width: 97%;
+  margin-left: 0.5vw;
+  font-family: Courier;
 }
 
 .about:hover {
   box-shadow: 0 0 2px 1px;
 }
 
+ul{
+  overflow-wrap: break-word;
+}
+
 .opo {
   border-style: dotted;
   border-color: black;
   border-radius: 5px;
-  margin: 20px;
+  margin-top: 3vh;
+  margin-right: 1vw;
   padding: 20px;
-  background-color: black;
+  background-color: whitesmoke;
   display: block;
   text-align: center;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .opo:hover {
@@ -153,7 +160,11 @@ li {
 }
 
 footer {
-  margin: 20px;
+  height: auto;
+  text-indent: 20px;
+  position:absolute;
+  bottom: 1%;
+  font-size: 2vh;
 }
 
 a:link {
