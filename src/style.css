@@ -10,7 +10,7 @@ header {
   display: grid;
   grid-template-columns: 30% 70%;
   background-color: whitesmoke;
-  border: dotted #FFFFFF;
+  border: dotted white;
   border-radius: 5px;
   height: 25%;
   min-height: 70px;
@@ -19,6 +19,8 @@ header {
 #log{
   position: absolute;
   top: 2.5vh;
+  font-size: 20vh;
+  text-indent: 1vw;
 }
 
 
@@ -46,22 +48,48 @@ h4 {
   font-size: 2vh;
 }
 
+.story:hover {
+  color: black;
+}
+
 .container {
-  height: 70%;
   display: flex;
   flex-direction: row;
-  border: dotted #FFFFFF;
+  border: dotted white;
+}
+
+.container_homepage {
+  height: 70%;
 }
 
 main {
   width: 75%;
   float: left;
+}
+
+.main_homepage {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(2, 50%);
   gap: 10px;
   text-align: center;
   padding: 50px 30px 30px 50px;
+}
+
+.main_story{
+  padding: 20px 30px 50px 50px;
+}
+
+h3 {
+  text-align: center;
+}
+
+.date {
+  text-align: right;
+}
+
+.dots {
+  text-align: center;
 }
 
 .cover {
@@ -97,22 +125,29 @@ section:hover .overlay {
 }
 
 .text {
-  color: slategrey;
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.text_homepage {
+  color: slategrey;
   overflow: auto;
   max-height: 90%;
 }
 
+.text_story {
+  color: black;
+  font-size: 20px;
+}
 
 aside {
   float: right;
   width: 25%;
   padding-top: 3%;
-  border: dotted #FFFFFF;
+  border: dotted white;
   overflow: scroll;
 }
 
@@ -159,13 +194,59 @@ li {
   list-style-type: none;
 }
 
-footer {
+#topBtn {
+  display: none;
+  position: fixed;
+  right: 11vw;
+  bottom: 100px;
+  font-size: x-large;
+  border: dotted;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50px;
+}
+
+#topBtn:hover {
+  box-shadow: 0 0 2px 1px;
+}
+
+.footer_homepage {
   height: auto;
   text-indent: 20px;
   position:absolute;
   bottom: 1%;
   font-size: 2vh;
 }
+
+.footer_story {
+  margin: 20px;
+  padding: 20px;
+}
+
+.back_to_hpg:hover {
+  color: black;
+}
+
+.pagination {
+  display: inline-block;
+  margin-left: 10vw;
+  margin-bottom: 3vh;
+}
+
+.pagination a {
+  color: black;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.pagination a:hover:not(.active) {background-color: lightgray;}
 
 a:link {
   text-decoration: none;
@@ -181,6 +262,7 @@ a:hover {
   text-decoration: none;
   color: slategrey;
 }
+
 a:active {
   text-decoration: none;
   color: slategrey;

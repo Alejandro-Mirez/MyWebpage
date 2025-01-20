@@ -5,7 +5,6 @@ function showAbout(){
     icon: "question",
     confirmButtonText: "Zamknij",
     confirmButtonColor: "#708090",
-   // toast: true,
     heightAuto: false
   });
 }
